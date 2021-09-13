@@ -1,0 +1,29 @@
+GET http://localhost:4000
+
+
+###
+GET http://localhost:4000/api/auth/
+
+
+###
+POST  http://localhost:4000/api/auth/new
+Content-Type: application/json
+
+{
+  "name":"Juan Carlos",
+  "email":"juan@gmail.com",
+  "password":"123456"
+}
+###
+POST  http://localhost:4000/api/auth/
+Content-Type: application/json
+
+{
+  "email":"juan@gmail.com",
+  "password":"123456"
+}
+
+###
+GET   http://localhost:4000/api/auth/renew
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTNlNzllNDEyYTQ0ZTQ0ZWY1ZmZlNjgiLCJuYW1lIjoiUm9iZXJ0byBDYXJsb3MiLCJpYXQiOjE2MzE0ODg4NDksImV4cCI6MTYzMTQ5NjA0OX0.KH9lJyzYZjqXaaCRXyzxrGqennwCEowyfpwyPbFfrLg
