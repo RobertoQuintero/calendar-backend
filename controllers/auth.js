@@ -68,7 +68,7 @@ const loginUsuario = async (req, res = response) => {
     console.log(error);
     res
       .status(500)
-      .json({ ok: false, msg: "Porfavor hable con el adminsitrador" });
+      .json({ ok: false, msg: "Porfavor hable con el adminsitrador", error });
   }
 };
 
